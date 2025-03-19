@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* Resetting default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background-color: #0066cc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            
+
+        }
+
+        .navlist {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .navlink {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .navlink:hover {
+            background-color: #87ffc3;
+            border-radius: 25px;
+            transform: translateY(-3px);
+        }
+
+        .navbimg {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        /* Container for content */
+        .container {
+            width: 85%;
+            margin: auto;
+            padding: 40px 0;
+            margin-top: 5%;
+        }
+
+        /* Section Styling */
+        .section {
+            background-color: white;
+            margin-bottom: 30px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: #0066cc;
+        }
+
+        .section p,
+        .section ul {
+            font-size: 18px;
+            color: #666;
+        }
+
+        .section ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        .section ul li {
+            margin: 10px 0;
+        }
+
+        .section a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .section a:hover {
+            text-decoration: underline;
+        }
+
+        /* Contact section */
+        .contact {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .contact p {
+            font-size: 18px;
+        }
+
+        .contact a {
+            color: #ff6347;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <img src="navb.png" alt="navimg" class="navbimg">
+        <ul class="navlist">
+            <li><a class="navlink" href="#about">About Me</a></li>
+            <li><a class="navlink" href="#projects">Projects</a></li>
+            <li><a class="navlink" href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>Hi, I'm Abdullah Tanveer, a Computer Science student passionate about web development. I enjoy crafting
+                responsive and visually appealing websites using HTML and CSS. With a strong foundation in front-end
+                design, I'm eager to expand my skills and explore modern web technologies. I'm always excited to learn
+                and build creative digital experiences!</p>
+
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Matriculation (Computer Science)</strong></li>
+                <p>Army Public School, Jalal Pur Jattan (2018-20)</p>
+                <li><strong>Intermediate (Computer Science)</strong></li>
+                <p>Punjab Group of Colleges, Jalal Pur Jattan (2020-22)</p>
+                <li><strong>BS Honors (Computer Science)</strong></li>
+                <p>University Of Gujrat (2023-continue)</p>
+            </ul>
+
+            <h2>Interest</h2>
+            <ul>
+                <li>Programming</li>
+                <li>Deep Learning</li>
+                <li>Collaborative Projects</li>
+                <li>Sports</li>
+            </ul>
+
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Responsive Web Design</li>
+                <li>Problem-Solving & Teamwork</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <div>
+                <h3>Project 1</h3>
+                <p>A brief description of the project.</p>
+            </div>
+            <div>
+                <h3>Project 2</h3>
+                <p>A brief description of the project.</p>
+            </div>
+            <div>
+                <h3>Project 3</h3>
+                <p>A brief description of the project.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:iamabdullahtanveer@email.com">iamabdullahtanveer@email.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/abdullah-tanveer-570216338/"
+                    target="_blank">linkedin.com/in/abdullah_tanveer</a></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
